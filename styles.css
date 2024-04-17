@@ -1,0 +1,40 @@
+/* Tło całej strony */
+body {
+    background-color: #9fcbe694; /* Kolor tła */
+}
+
+/* Tabela DataTables */
+#przyklad {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #789ac5; /* Kolor tła tabeli */
+}
+
+#przyklad th, #przyklad td {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+#przyklad tr:nth-child(even) {
+    background-color: #c2c2c2;
+}
+
+#przyklad tr:hover {
+    background-color: #a886be;
+}
+
+/* Animacja rozwijania wiersza */
+tr.parent td.details-control {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+
+div.details {
+    background-color: #d6d6d6;
+    border-left: 3px solid #868686;
+    padding: 10px;
+    display: none;
+}
